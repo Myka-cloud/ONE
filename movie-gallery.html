@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Movie-Style.css">
+    <title>Html And CSS Video Gallery</title>
+</head>
+<body oncontextmenu="return false">
+    <div class="container">
+        <a href="#Home" class="btn">Watch</a>
+       
+        <div id="video_player">
+            <video controls poster="" class="video" id="video">
+                
+                <source src="./Assets/1.mp4" type="video/mp4">
+                <source src="./Assets/2.mp4" type="video/mp4">
+              
+            </video>
+            <div class="scrollBox">
+                <h2 class="title">RECOMMENDATION</h2>
+                <div class="box">
+                    <img src="https://www.layar.id/wp-content/uploads/2019/09/2-stampede.jpg">
+                    <div class="box-content">
+                        <h2>ONE PIECE FILM: STAMPEDE</h2>
+                        <h3>Pirates from around the world gather at the Pirates Expo to join the hunt for Gol D. Roger's lost treasure.</h3>
+                        <a href="./Assets/2.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://wallpapercave.com/wp/wp10457383.jpg">
+                    <div class="box-content">
+                        <h2>ONE PIECE FILM: GOLD</h2>
+                        <h3>The Straw Hat Pirates come to Gran Tesoro, the richest ship in the world.</h3>
+                        <a href="./Assets/3.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/600/73/desktop-wallpaper-one-piece-film-z-ost-one-piece-flim-z.jpg">
+                    <div class="box-content">
+                        <h2>ONE PIECE FILM: Z</h2>
+                        <h3>A former Marine stands in the way of the Straw Hat Pirates.</h3>
+                        <a href="./Assets/4.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+               <!--- <div class="box">
+                    <img src="https://guessanime.com/image/anime/cover_images/5987/original.jpg">
+                    <div class="box-content">
+                        <h2>ONE PIECE 3D: STRAWHAT CHASE</h2>
+                        <h3>A former Marine stands in the way of the Straw Hat Pirates.</h3>
+                        <a href="./Assets/5.mp4" class="btn">Watch</a>
+                    </div>
+                </div>----->
+                <div class="box">
+                    <img src="https://wallpapercave.com/wp/wp5108174.jpg">
+                    <div class="box-content">
+                        <h2>ONE PIECE STRONG WORLD</h2>
+                        <h3>StrawHat Pirates must save their navigator stop the legendary Pirate Shiki the Golden Lion from conquering East Blue.</h3>
+                        <a href="./Assets/6.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjAzZjI0N2ItYzIxNS00OGY3LTk1ZDUtYWM5NTQwYjc4YjQ1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg">
+                    <div class="box-content">
+                        <h2>ONE PIECE: EPISODE CHOPPER PLUS- BLOOM IN MIRACLE SAKURA</h2>
+                        <h3>An alternate retelling of the winter island with no name.</h3>
+                        <a href="./Assets/7.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/585/973/desktop-wallpaper-one-piece-the-desert-princess-and-the-pirates-adventure-in-alabasta-alabasta.jpg">
+                    <div class="box-content">
+                        <h2> EPISODE OF ALABASTA- THE DESSERT PRINCESS AND PIRATES</h2>
+                        <h3> Luffy and his crew come to rescue a land in the midst of a civil war, due to a powerful devil fruit user.</h3>
+                        <a href="./Assets/8.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZDFhYTk3YWQtMmRhNC00YmIyLTk5NGItMDA4YjVkNTI1MjY1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg">
+                    <div class="box-content">
+                        <h2>THE GIANT MECHANICAL SOLDIER OF KATAKURI CASTLE</h2>
+                        <h3> The StrawHat crew salvage a treasure chest from a sinking wreckage during a raging storm. </h3>
+                        <a href="./Assets/9.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ###########################javascript for vidoe Player################ -->
+
+    <script type="text/javascript">
+        let anchors = document.querySelectorAll('div .btn');
+    let links = [...anchors];
+    
+    for (let i=0; i<links.length; i++) {
+        links[i].onclick = handler;
+    }
+    function handler(e) {
+        e.preventDefault();
+        let videotarget = this.getAttribute("href");
+        let filename = videotarget.substr(0, videotarget.lastIndexOf('.'));
+        let video = document.getElementById("video");
+        video.removeAttribute("poster");
+        let source = document.querySelectorAll("#video_player video source");
+        source[0].src = filename + ".mp4";
+        source[1].src = filename + ".m4v";
+        video.load();
+        video.play();
+    }
+    </script>
+</body>
+</html>

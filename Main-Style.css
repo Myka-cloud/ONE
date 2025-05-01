@@ -1,0 +1,1715 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* PRESETS */
+
+:root{
+    --swiper-navigation-color: var(#F5CA1D);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: #1D1D1D;
+    color: #fff;
+    width: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+}
+
+/* Hero Section */
+
+
+.main-wrapper{
+    margin: 0 auto;
+    background-image: url(./Assets/ワンピース.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position-y: 90px;
+    width: 100%;
+}
+.Hero-Container{
+    margin: 2em;
+    padding-top: 5em;
+    height: 100vh;
+}
+
+
+
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background: #1D1D1D;
+    z-index: 9999;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+}
+
+    nav.Web-Logo{
+        display: none;
+    }
+
+   nav ul{
+        padding: 0;
+        margin-top: 15em;
+   }
+      nav ul a{
+            color: #fff;
+            font-size: 1.8rem;
+            padding: .75em 2em;
+            width: 100%;
+            display: block;
+      }
+      nav ul a:hover {
+        background-color: #F5CA1D;
+        transition: all 0.6s ease-in-out;
+      }
+
+
+header{
+    position: fixed;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    background-color: #1D1D1D;
+
+    .HB-menu{
+        width: 4em;
+        cursor: pointer;
+    }
+}
+
+
+
+
+.M-Logo img {
+    width: 100%;
+}
+
+.M-Title{
+    width: 100%;
+    text-align: center;
+}
+
+
+.M-Title h2{
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.M-Title h2 span{
+    color: #F5CA1D;
+    width: 100%;
+}
+
+
+
+
+main{
+    width: 100%;
+    padding-top: 15em ;
+    height: 100vh;
+}
+
+
+
+.Main-Pic img{
+    width: 100%;
+}
+
+
+
+.Volume{
+    position: absolute;
+    top: 25.4em;
+    left: 11em;
+}
+
+
+
+.Straw{
+    position: absolute;
+    left:  1.1em;
+    top: 8.3em;
+    font-size: 3rem;
+}
+
+.Straw h1{
+    width: 100%;
+}
+
+.Hero-Img img{
+    width: 100%;
+    transform: scale(0.6);
+}
+
+.Issue img{
+
+    width: 8em;
+}
+
+
+.Issue{
+    position: absolute;
+    top: 47em;
+    right: 0;
+    left: 5em;
+    bottom: 0em;
+    font-size: 0.8rem;
+    
+}
+
+.Hat{
+    position: absolute;
+    font-size:  3rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #F5CA1D;
+    color: transparent;
+    top: 8.9em;
+    right: 1em;
+}
+
+
+.Author{
+    position: absolute;
+    top: 36em;
+    left: 40em;
+    bottom: 0;
+    right: 0;
+}
+
+.Author h3{
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.Pirates{
+    font-size: 2.7rem;
+    position: absolute;
+    top: 17.1em;
+    bottom: 0;
+    right: 0;
+    left: 1.7em;
+    
+
+    span{
+        color: transparent;
+        -webkit-text-stroke-color: #F5CA1D;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+.Close-Btn{
+    width: 5em;
+    margin: 2em;
+    float: right;
+    cursor: pointer;
+
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+.Arrow-D{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+
+.About-Container{
+    margin-top: 8em;
+    padding-bottom: 5em;
+}
+
+
+.About-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Assets/About.png);
+    background-position: -4em 13em;
+
+
+
+.About-Title{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+
+    .OP-Title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+        text-align: center;
+
+        h5{
+            margin-top: 2em;
+            font-size: 2em;
+        }
+    }
+
+    .OP-Title img{
+        width: 55%;
+    }
+
+    .OP-Desc{
+        font-size: 2em;
+        text-align: center;
+        width: 80%;
+        margin-top: 2em;
+    }
+
+
+    .About-CTN{
+        margin-top: 8em;
+        
+    }
+
+    .About-CTN a{
+        padding: 15px 30px;
+        background-color: #F5CA1D;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 30px;
+    }
+
+
+    
+
+
+}
+
+/* CAROUSEL ALBUM */
+
+
+.SH-Title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem
+        
+    }
+
+    .Pir-Album{
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #F5CA1D;
+    }
+    
+}
+
+
+
+.Album{
+    margin-top: 5em;
+    width: 100%;
+    
+}
+
+
+.Luffy-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #C52429;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.Luffy-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+}
+
+
+.Luffy-Info{
+    margin: 2em;
+
+    .Luffy-Name{
+        line-height: 3em;
+    }
+
+    .Luffy-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .Luffy-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: .5em;
+        margin-bottom: 1em;
+    }
+
+    .Luffy-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Luffy-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Luffy-DF img{
+        width: 50%;
+    }
+
+    .Luffy-LG img{
+        width: 50%;
+    }
+
+    .Luffy-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Luffy-SM a{
+        background-color: #A21129;
+        color: #fff;
+       
+    }
+
+    .Luffy-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;
+        border-radius: 20px;
+    }
+
+
+}
+
+.Zoro-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00a547;
+    border-radius: 30px;
+    margin-bottom: 2em;
+
+    .Zoro-Name-LG{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .Zoro-Logo img{
+            width: 50%;
+        }
+    
+    }
+}
+
+.Zoro-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.Zoro-Info{
+    margin: 2em;
+
+    .Zoro-Name{
+        line-height: 3em;
+    }
+
+    .Zoro-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .Zoro-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: .5em;
+        margin-bottom: 1em;
+    }
+
+    .Zoro-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Zoro-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Zoro-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .Zoro-LG img{
+        width: 50%;
+
+    }
+
+    .Zoro-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Zoro-SM a{
+        background-color: #A21129;
+        color: #fff;
+       
+    }
+
+    .Zoro-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;
+        border-radius: 20px;
+    }
+
+
+}
+
+.Sanji-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DA7810;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.Sanji-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.Sanji-Info{
+    margin: 2em;
+
+    .Sanji-Name{
+        line-height: 3em;
+    }
+
+    .Sanji-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .Sanji-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+    .Sanji-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Sanji-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Sanji-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .Sanji-LG img{
+        width: 50%;
+
+    }
+
+    .Sanji-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Sanji-SM a{
+        background-color: #A21129;
+        color: #fff;
+       
+    }
+
+    .Sanji-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;
+        border-radius: 20px;
+    }
+
+
+}
+
+.Brook-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1F1F1F;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.Brook-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.Brook-Info{
+    margin: 2em;
+
+    .Brook-Name{
+        line-height: 3em;
+    }
+
+    .Brook-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .Brook-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+    .Brook-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Brook-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Brook-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .Brook-LG img{
+        width: 50%;
+
+    }
+
+    .Brook-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Brook-SM a{
+        background-color: #A21129;
+        color: #fff;
+       
+    }
+
+    .Brook-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;
+        border-radius: 20px;
+    }
+
+
+}
+
+
+.Nico-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2E1E5F;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.Nico-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.Nico-Info{
+    margin: 2em;
+
+    .Nico-Name{
+        line-height: 3em;
+    }
+
+    .Nico-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .Nico-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+    }
+
+    .Nico-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Nico-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Nico-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .Nico-LG img{
+        width: 50%;
+
+    }
+
+    .Nico-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Nico-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .Nico-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.Nami-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #24609A;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.Nami-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.Nami-Info{
+    margin: 2em;
+
+    .Nami-Name{
+        line-height: 3em;
+    }
+
+    .Nami-Name h3{
+        font-size: 3rem;
+        margin-top: 1em
+    }
+
+    .Nami-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .Nami-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Nami-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Nami-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .Nami-LG img{
+        width: 50%;
+
+    }
+
+    .Nami-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Nami-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .Nami-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.Chop-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #BD475C;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.Chop-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.Chop-Info{
+    margin: 2em;
+
+    .Chop-Name{
+        line-height: 3em;
+    }
+
+    .Chop-Name h3{
+        font-size: 3rem;
+        margin-top: .5em;
+    }
+
+    .Chop-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+    .Chop-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.Chop-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .Chop-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .Chop-LG img{
+        width: 50%;
+
+    }
+
+    .Chop-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .Chop-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .Chop-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.USP-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9B7239;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.USP-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.USP-Info{
+    margin: 2em;
+
+    .USP-Name{
+        line-height: 3em;
+    }
+
+    .USP-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .USP-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+    .USP-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.USP-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .USP-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .USP-LG img{
+        width: 50%;
+
+    }
+
+    .USP-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .USP-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .USP-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.FRK-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1466D6;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.FRK-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.FRK-Info{
+    margin: 2em;
+
+    .FRK-Name{
+        line-height: 3em;
+    }
+
+    .FRK-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .FRK-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .FRK-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.FRK-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .FRK-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .FRK-LG img{
+        width: 50%;
+
+    }
+
+    .FRK-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .FRK-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .FRK-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.NEF-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #D3384F;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.NEF-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.NEF-Info{
+    margin: 2em;
+
+    .NEF-Name{
+        line-height: 3em;
+    }
+
+    .NEF-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .NEF-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+    .NEF-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.NEF-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .NEF-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .NEF-LG img{
+        width: 50%;
+
+    }
+
+    .NEF-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .NEF-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .NEF-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.JIN-Container{
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #256D9E;
+    border-radius: 30px;
+    margin-bottom: 2em;
+}
+
+.JIN-Art img{
+    width: 100%;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 333;
+}
+
+
+.JIN-Info{
+    margin: 2em;
+
+    .JIN-Name{
+        line-height: 3em;
+    }
+
+    .JIN-Name h3{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .JIN-Name h4{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+    .JIN-Desc{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-bottom: 2.3em;
+    } 
+    
+}
+
+
+.JIN-Flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+    .JIN-DF img{
+        display: none;
+        width: 50%;
+    }
+
+
+    .JIN-LG img{
+        width: 50%;
+
+    }
+
+    .JIN-SM{
+        font-size: 1.2rem;
+        margin-left: 2em;
+    }
+
+
+
+    .JIN-SM a{
+        background-color: #F5CA1D;
+        color: #fff;
+       
+    }
+
+    .JIN-SM h5{
+        padding: 1em;
+        background-color: #F5CA1D;;
+        border-radius: 20px;
+    }
+
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 4em;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-button-next{
+    color: #F5CA1D ;
+  }
+
+  .swiper-button-prev{
+    color: #F5CA1D;
+  }
+
+
+
+
+
+    
+
+/* Media Queries */
+
+@media only screen and (min-width: 540px) {
+
+    .swiper{
+        width: 500px;
+    }
+
+    #About{
+        height: 100vh;
+    }
+}
+
+/*---------------------------------UNIVERSAL STYLE--------------------------------*/
+.container {
+    max-width: 95%;
+    margin: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  i {
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  
+  /*---------------------------------Movies PAGE---------------------------------*/
+  #Movies {
+    color: white;
+    background-image: url("https://staticg.sportskeeda.com/editor/2022/10/195a4-16672284831520-1920.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  .Headerbg {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(32, 31, 31, 1) 0%, rgba(34, 31, 31, 0.3) 100%)
+  }
+  
+  Header {
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  #palybtn {
+    background: #F5CA1D;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  button {
+    background: #F5CA1D;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 30px;
+    cursor: pointer;
+  }
+  
+  
+  Header.sticky .headerbg {
+    position: relative;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width:768px) {
+  
+    .Movies{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+    }
+  
+    
+  }
+  
+  /*-----------------------Movie CONTENT------------------------------------*/
+  .left, .right {
+    width: 50%;
+  }
+  
+  .top {
+    margin-top: 20%
+  }
+  
+  .mtop {
+    margin-top: 10%
+  }
+  
+  h1 {
+    margin-top: 25%;
+    top:15%;
+    font-size: 70px;
+    letter-spacing: 2px;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+  
+  .time {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  
+  .time label {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  .time i {
+    font-size: 5px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .Movies_content p {
+    font-size: 45px;
+    line-height: 35px;
+  }
+  
+  .btn {
+    padding: 20px 40px;
+    margin-right: 20px;
+  }
+  
+  .Movies_content #palybtn {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: white;
+    color: #F5CA1D;
+  }
+  
+  .button {
+    margin-top: 30px;
+  }
+  
+  .button p {
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  
+  /*--------------------------------RECOMMENDATION----------------------------------------------*/
+  .heading h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .heading {
+    margin-bottom: 30px;
+  }
+  
+  .heading button {
+    padding: 15px 50px;
+  }
+  
+  .popular {
+    color: white;
+  }
+  
+  /*----------------------------------IMAGE HOVER-----------------------------------------------*/
+  .popular .box {
+    position: relative;
+    background: #221F1F;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .popular .box .imgBox {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .popular .box .imgBox img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  
+  .popular .box:hover .imgBox img {
+    opacity: .6;
+    transform: scale(1.2);
+  }
+  
+  .popular .box .content {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 40%;
+    z-index: 2;
+  }
+  
+  .popular .box .content i {
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .popular .box .content i {
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .popular .box:hover .content i {
+    text-decoration: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popular #palybtn {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  
+  
+  /*-------------------------------TITLE OF MOVIES----------------------------------------------------*/
+  .popular .text {
+    padding: 20px;
+  }
+  
+  .popular .time {
+    margin: 0;
+  }
+  
+  .popular .time a {
+    color: #F5CA1D;
+  }
+  
+  .owl-s .dots span {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .owl-nav span {
+    font-size: 50px;
+    color: white;
+  }
+  
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 25%;
+  }
+  
+  .owl-prev {
+    left: -20px;
+  }
+  
+  .owl-next {
+    right: -20px;
+  }
+  
+  
+  
+  /*---------------------------------TO BECOME RESPONSIVE TO ALL DEVICES-----------------------------*/
+  
+  @media only screen and (max-width:768px) {
+    .left {
+      width: 100%;
+    }
+  
+   
+  }
+  
+  @media only screen and (max-width:511px) {
+   
+    h1 {
+      font-size: 30px;
+    }
+  
+    .time p {
+      margin-top: 10px;
+    }
+  
+    .left p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    .time button {
+      padding: 5px 10px;
+    }
+  
+    .heading {
+      margin-top: 50px;
+    }
+  
+    .owl-prev {
+      left: 20px;
+    }
+  
+    .owl-next {
+      right: 20px;
+    }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

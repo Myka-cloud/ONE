@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ISA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./Main-Style.css">
+  <link rel="icon" href="./Assets/Logo.png">
+  <title>One Piece | Fandom</title>
+
+   <!-----------------------------------------------Fontawesome link--------------------------------------------------------------------->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <!------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+  <!-----------------------------------------------Owl Carousel CSS--------------------------------------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!------------------------------------------------------------------------------------------------------------------------------------>
+ 
+
+
+  <!------------------------------------------- Jquery css------------------------------------------------------------------------------->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!------------------------------------------------------------------------------------------------------------------------------------>
+
+
+</head>
+<body>
+
+
+
+    <div class="main-wrapper">
+
+        
+      <!--------- NAVIGATION BAR -------->  
+        <header>
+            <div class="M-Logo">
+                <img src="./Assets/Logo.png" alt="">
+            </div>
+
+            <div class="M-Title">
+                <h2>One <span>Piece</span></h2>
+            </div>
+
+            <nav>
+
+                <img class="Close-Btn" src="./Assets/Close-Btn.svg" alt="Close-Btn">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Movies">Movies</a></li>
+                    <li><a href="#">Album</a></li>
+                    <li><a href="#">Arcs</a></li>
+                </ul>
+
+                
+
+            </nav>
+
+            <img class="HB-menu" src="./Assets/HB-Menu.svg" alt="Menu-btn">
+
+        </header>
+
+
+         <!--------- HERO SECTION -------->
+
+    <main>
+
+
+
+        <div class="Hero-Container">
+
+
+            <div class="Main-Pic">
+                <img src="./Assets/MAIN PIC.png" alt="Hero-Image">
+            </div>
+
+            <div class="Arrow-D">
+               <a href="#About"><img src="./Assets/Arrow.png" alt="Arrow-Down"></a>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!--------- ABOUT SECTION -------->
+
+    <section id="About">
+
+        <div class="About-Container">
+            <div class="About-1">
+            <div class="About-Title">
+                <h2>About</h2>
+            </div>
+
+            <div class="OP-Title">
+                <img src="./Assets/ONE-LOGO.png" alt="">
+                <h5>Since July 1997</h5>
+            </div>
+
+            <div class="OP-Desc">
+                <p>One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 105 tankōbon volumes as of March 2023.</p>
+            </div>
+
+            <div class="About-CTN">
+                <a href="#Movies">See More</a>
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+    </section>
+<!-----------------------------------------------Movie Page---------------------------------------------------------------------------->
+
+  <section id="Movies">
+    <a href="#Movies"></a>
+    <div class="Headerbg ">
+      <div class="movie_content mtop">
+        <div class="container">
+          <div class="left">
+            <br>
+            <h1>ONE PIECE FILM: RED</h1>
+
+            <div class="time flex">
+              <label>PG</label>
+              <i class="fas fa-circle"></i>
+              <span>1hr 40mins</span>
+              <i class="fas fa-circle"></i>
+              <p>2022</p>
+              <i class="fas fa-circle"></i>
+              <button>Adventure</button>
+            </div>
+
+            <h2>For the first time ever, Uta - the most beloved singer in the world 
+              - will reveal herself to the world at a live concert. The voice that the whole world has been waiting for is about to resound.
+            </h2>
+            <div class="button flex">
+             
+              <a href="movie-gallery.html"><button class="btn mt-3">WATCH </button></a>
+              
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!------------------------------------------------JS FUNCTION---------------------------------------------------------------------->
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+<!----------------
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Recommendation</h2>
+        
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/one-piece-stampede1.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+           
+            </div>
+            <div class="text">
+              <h3>ONE PIECE FILM: STAMPEDE</h3>
+              <div class="time flex">
+                <span>1hr 41mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://wallpapercave.com/wp/wp7635793.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+              
+             
+            </div>
+            <div class="text">
+              <h3>ONE PIECE FILM: GOLD</h3>
+              <div class="time flex">
+                <span>2hrs 4mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2019</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://i.pinimg.com/originals/b0/47/67/b0476769b7d96b141e60cca732d0e2df.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+           
+              
+            </div>
+            <div class="text">
+              <h3>ONE PIECE FILM: Z</h3>
+              <div class="time flex">
+                <span>1hr 48mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2016</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://www.kanpai.fr/sites/default/files/uploads/2011/05/one-piece-3d-mugiwara-chase.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+            
+            </div>
+            <div class="text">
+              <h3>STRAWHAT CHASE</h3>
+              <div class="time flex">
+                <span>3Omins</span>
+                <i class="fas fa-circle"></i>
+                <a>2011</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://m.media-amazon.com/images/M/MV5BMmIyNGQ3NmEtNGZkNi00MDFhLThhOTMtYjEyN2U1OTc1MjBlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+            
+            </div>
+            <div class="text">
+              <h4>ONE PIECE: STRONG WORLD </h4>
+              <div class="time flex">
+                <span>1hrs 40mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2009</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://m.media-amazon.com/images/M/MV5BZjM4ZmE1YzgtNGNlYi00Y2MzLTk0ZjAtZDhmMzBkMTQ0ZWZjXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+            
+            </div>
+            <div class="text">
+              <h4>BLOOM IN MIRACLE SAKURA</h4>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2008</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://is4-ssl.mzstatic.com/image/thumb/Video124/v4/65/3a/84/653a84e5-a23a-6a6b-5ff2-d081e8974be3/TOEI_OP_FILM_ALABASTA_JPN_BDW.png/1200x675mf.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+             
+            </div>
+            <div class="text">
+              <h6>THE DESSERT PRINCESS AND ADVENTURE OF PIRATES IN ALABASTA</h6>
+              <div class="time flex">
+                <span>1hrs 30mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2007</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://m.media-amazon.com/images/M/MV5BZWRiNzkwM2ItMjk3ZC00ZDYyLWExNjQtNzc1ODU2ZGRhMjhmXkEyXkFqcGdeQXVyMTI2NTM4NjM1._V1_.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+              
+            </div>
+            <div class="text">
+              <h6>GIANT MECHANICAL SOLDIER OF KATAKURI CASTLE</h6>
+              <div class="time flex">
+                <span>1hrs 34mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2006</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/03/One-Piece-Baron-Omatsuri-And-the-Secret-Island-Feature-image.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+<div class="content">
+              
+              </div>
+            <div class="text">
+              <h5>BARON OMATSUKI AND SECRET ISLAND</h5>
+              <div class="time flex">
+                <span>1hrs 28mins</span>
+                <i class="fas fa-circle"></i>
+                <a>2005</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!------------------------------------------- Owl Carousel-------------------------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+  <!------------------------------------- Owl Carousel Function--------------------------------------->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+    
+    <!--------- ALBUM SECTION -------->
+
+    <section id="#Album" class="Album">
+
+
+        <div class="SH-Title">
+            <h1>The Straw Hat</h1>
+            <h1 class="Pir-Album">Pirates</h1>
+        </div>
+
+        <div class="SH-Desc">
+
+        </div>
+
+ 
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="Luffy-Container">
+
+                    <div class="Luffy-Art">
+                        <img src="./Assets/Luffy.png" alt="Luffy-Art">
+                    </div>
+        
+                    <div class="Luffy-Info">
+                   <div class="Luffy-Name">
+                        <h3>Monkey D. Luffy</h3>
+                        <h4>Captain</h4>
+                    </div>
+        
+                    <div class="Luffy-Desc">
+                        <p>Monkey D. Luffy, also known as "Straw Hat Luffy" and commonly as "Straw Hat", is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates, as well as the most powerful of its top fighters. </p>
+                    </div>
+        
+                    <div class="Luffy-Flex">
+        
+        
+                    <div class="Luffy-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+        
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="Zoro-Container">
+        
+                    <div class="Zoro-Art">
+                        <img src="./Assets/Zoro.png" alt="Luffy-Art">
+                    </div>
+    
+                    <div class="Zoro-Info">
+                        <div class="Zoro-Name-LG">
+                    <div class="Zoro-Name">
+                        <h3>Roronoa Zoro</h3>
+                        <h4>2nd Captain</h4>
+                    </div>
+                </div>
+    
+                    <div class="Zoro-Desc">
+                        <p>Roronoa Zoro, also known as "Pirate Hunter" Zoro, is a main combatant of the Straw Hat Pirates, one of their two swordsmen, one of the Senior Officers of the Straw Hat Grand Fleet, and is publicly recognized as the right-hand man of his crew's captain Monkey D. Luffy. </p>
+                    </div>
+    
+                    <div class="Zoro-Flex">
+    
+                    <div class="Zoro-DF">
+                        <img src="./Assets/Luffy-DG.png" alt="">
+                    </div>
+    
+    
+                    <div class="Zoro-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+    
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="Sanji-Container">
+        
+                    <div class="Sanji-Art">
+                        <img src="./Assets/Sanji.png" alt="Luffy-Art">
+                    </div>
+    
+                    <div class="Sanji-Info">
+                    <div class="Sanji-Name">
+                        <h3>Sanji</h3>
+                        <h4>Cook</h4>
+                    </div>
+    
+                    <div class="Sanji-Desc">
+                        <p>"Black Leg" Sanji, born as Vinsmoke Sanji, is the cook of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc.</p>
+                    </div>
+    
+                    <div class="Sanji-Flex">
+    
+                    <div class="Sanji-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+    
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Brook-Container">
+        
+                    <div class="Brook-Art">
+                        <img src="./Assets/Brook.png" alt="Luffy-Art">
+                    </div>
+    
+                    <div class="Brook-Info">
+                    <div class="Brook-Name">
+                        <h3>Brook</h3>
+                        <h4>Musician</h4>
+                    </div>
+    
+                    <div class="Brook-Desc">
+                        <p>"Soul King" Brook is the musician of the Straw Hat Pirates, one of their two swordsmen and one of the Senior Officers of the Straw Hat Grand Fleet. He is the ninth member of the crew and the eighth to join, doing so at the end of the Thriller Bark Arc.</p>
+                    </div>
+    
+                    <div class="Brook-Flex">
+    
+                    <div class="Brook-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+    
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Nico-Container">
+        
+                    <div class="Nico-Art">
+                        <img src="./Assets/Nico-Robin.png" alt="Luffy-Art">
+                    </div>
+    
+                    <div class="Nico-Info">
+                    <div class="Nico-Name">
+                        <h3>Nico Robin</h3>
+                        <h4>Archaeologist</h4>
+                    </div>
+    
+                    <div class="Nico-Desc">
+                        <p>"Demon Child" Nico Robin is the archaeologist of the Straw Hat Pirates. She was originally introduced as the vice president of Baroque Works, Formerly known as Miss All Sunday, before joining the Straw Hats. </p>
+                    </div>
+    
+                    <div class="Nico-Flex">
+                    <div class="Nico-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+    
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="Nami-Container">
+        
+                    <div class="Nami-Art">
+                        <img src="./Assets/Nami.png" alt="Luffy-Art">
+                    </div>
+    
+                    <div class="Nami-Info">
+                    <div class="Nami-Name">
+                        <h3>Nami</h3>
+                        <h4>Navigator</h4>
+                    </div>
+    
+                    <div class="Nami-Desc">
+                        <p>"Cat Burglar" Nami is the navigator of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. She is the third member of the crew and the second to join, doing so during the Orange Town Arc.</p>
+                    </div>
+    
+                    <div class="Nami-Flex">
+                    <div class="Nami-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+    
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="Chop-Container">
+        
+                    <div class="Chop-Art">
+                        <img src="./Assets/Chopper.png" alt="Luffy-Art">
+                    </div>
+    
+                    <div class="Chop-Info">
+                    <div class="Chop-Name">
+                        <h3>Tony Tony Chopper</h3>
+                        <h4>Doctor</h4>
+                    </div>
+    
+                    <div class="Chop-Desc">
+                        <p>Tony Tony Chopper, also known as "Cotton Candy Lover" Chopper, is the doctor of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the sixth member of the crew and the fifth to join, doing so at the end of the Drum Island Arc.</p>
+                    </div>
+    
+                    <div class="Chop-Flex">
+                    <div class="Chop-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+    
+                    </div>
+                    </div>
+                </div>
+              </div>
+            <div class="swiper-slide">
+                <div class="USP-Container">
+        
+                    <div class="USP-Art">
+                        <img src="./Assets/Usopp.png" alt="Luffy-Art">
+                    </div>
+            
+                    <div class="USP-Info">
+                    <div class="USP-Name">
+                        <h3>Usopp</h3>
+                        <h4>Sniper</h4>
+                    </div>
+            
+                    <div class="USP-Desc">
+                        <p>"God" Usopp is the sniper of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the fourth member of the crew and the third to join, doing so at the end of the Syrup Village Arc. Although he left the crew during the Water 7 Arc.</p>
+                    </div>
+            
+                    <div class="USP-Flex">
+                    <div class="USP-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+            
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="FRK-Container">
+        
+                    <div class="FRK-Art">
+                        <img src="./Assets/Franky.png" alt="Luffy-Art">
+                    </div>
+            
+                    <div class="FRK-Info">
+                    <div class="FRK-Name">
+                        <h3>Franky</h3>
+                        <h4>Shipwright</h4>
+                    </div>
+            
+                    <div class="FRK-Desc">
+                        <p>"Iron Man" Franky is the shipwright of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the crew's eighth member and the seventh to join, doing so at the end of the Post-Enies Lobby Arc.</p>
+                    </div>
+            
+                    <div class="FRK-Flex">
+                    <div class="FRK-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+            
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="NEF-Container">
+        
+                    <div class="NEF-Art">
+                        <img src="./Assets/Nefertari.png" alt="Luffy-Art">
+                    </div>
+            
+                    <div class="NEF-Info">
+                    <div class="NEF-Name">
+                        <h3>Nefertari Vivi</h3>
+                        <h4>Former Member</h4>
+                    </div>
+            
+                    <div class="NEF-Desc">
+                        <p>Nefertari Vivi is a major character from the anime and manga franchise, One Piece. She is the princess of Alabasta, and the daughter of Nefertari Cobra and Nefertari Titi.</p>
+                    </div>
+            
+                    <div class="NEF-Flex">
+                    <div class="NEF-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+            
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="JIN-Container">
+        
+                    <div class="JIN-Art">
+                        <img src="./Assets/JInbe.png" alt="Luffy-Art">
+                    </div>
+            
+                    <div class="JIN-Info">
+                    <div class="JIN-Name">
+                        <h3>Jinbe</h3>
+                        <h4>Helmsman</h4>
+                    </div>
+            
+                    <div class="JIN-Desc">
+                        <p>"Knight of the Sea" Jinbe is the helmsman of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the tenth member of the crew and the ninth to join, doing so during the Wano Country Arc.</p>
+                    </div>
+            
+                    <div class="JIN-Flex">
+                    <div class="JIN-SM">
+                        <a href=""><h5>More Info</h5></a>
+                    </div>
+            
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    </section>
+    
+
+    </div>
+
+
+ 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./Main-JS.js">
+    </script>
+
+  
+
+
+</body>
+
+</html>
